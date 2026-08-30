@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bs-primary: #6610f2;
+    --bs-border: #e3e3e3;
+    --btn-width: 200px;
+}
+
+.ms-n1 {
+    margin-left: -0.5rem !important;
+}
+
+.mx-n1 {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+}
+
+.me-n1 {
+    margin-right: -0.5rem !important;
+}
+
+
+.btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary {
+    background-color: var(--bs-indigo);
+    color: var(--bs-white);
+}
+
+.btn-w {
+    width: var(--btn-width);
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+}
+
+.card-border {
+    border: 1px solid var(--bs-border);
+}
+
+.accordion-button {
+    background-color: var(--bs-indigo);
+    color: var(--bs-white);
+    max-width: 856px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.accordion-item .accordion-button.collapsed {
+    border-radius: 10px;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--bs-indigo);
+    color: var(--bs-white);
+    max-width: 856px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.accordion-button::after {
+    background-image: url("../images/next .svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../images/next .svg");
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 991px) {
+    .form {
+        width: 75% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .form {
+        width: 100% !important;
+        padding-left: 48px !important;
+        padding-right: 48px !important;
+    }
+}
+
+
+
+
+
+
